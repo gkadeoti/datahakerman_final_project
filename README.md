@@ -14,7 +14,18 @@ Where SECTION can be either 'books', 'characters', or 'houses' and INDEX is an i
 ### Attribute Information:
 
 # Environment Setup
+Available initial enviroment setup files.
 
+```bash
+enviroment.yml
+requirements.txt
+```
+
+```bash
+conda env create -f environment.yml
+conda activate hackermanproject_env
+
+```
 Step 1: Create repository on github
 
 ```
@@ -25,30 +36,14 @@ Step 1: Create repository on github
 Step 2: Clone repository in preferred directory location on local computer  
 ```
 git clone https://github.com/gkadeoti/datahakerman_final_project.git
-```
-Step 3: Create `environment.yml` file with relevant dependencies (see `environment.yml` file for full list of dependencies)
 
 ```
-channels:
-  - conda-forge
-  - defaults
-dependencies:
-  - python=3.9
-  - numpy
-  - pandas
-  - pip
-  - pip:
-    - torch==1.12.1
-    - torchvision==0.13.1
-    - torchtext==0.13.1 -f https://download.pytorch.org/whl/cpu/torch_stable.html
-    - autogluon
-    - streamlit
-    - jupyter
-```
 
-Step 4: Create environment using `environment.yml` file
+Step 3: Create environment using `environment.yml` file
 
 ```
 conda env create -f environment.yml
 
 ```
+
+
