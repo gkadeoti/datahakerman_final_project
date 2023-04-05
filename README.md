@@ -18,7 +18,6 @@ Available initial enviroment setup files.
 
 ```bash
 enviroment.yml
-requirements.txt
 ```
 
 ```bash
