@@ -17,7 +17,7 @@ Where SECTION can be either 'books', 'characters', or 'houses' and INDEX is an i
 Available initial enviroment setup files.
 
 ```bash
-enviroment.yml
+environment.yml
 ```
 
 ```bash
@@ -44,5 +44,7 @@ Step 3: Create environment using `environment.yml` file
 conda env create -f environment.yml
 
 ```
+# API Data Call
+
 
 
