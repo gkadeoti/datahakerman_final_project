@@ -1,5 +1,6 @@
 # Ignore practice files
 Comaprison_tests
+data.zip
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
