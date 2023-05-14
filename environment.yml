@@ -3,11 +3,8 @@ channels:
   - defaults
 dependencies:
   - python=3.9
-  - numpy
-  - pandas
   - pip
   - pip:
-    - jupyter
-    - requests
-name: hackermanproject_env
-prefix: envs/hackermanproject_env
+       - -r requirements.txt
+name: twittersentiment_env
+prefix: envs/twittersentiment_env
