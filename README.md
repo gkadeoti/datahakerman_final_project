@@ -1,7 +1,7 @@
 
 # Introduction
 
-This project/chllenge is divided into 4 parts: API Access, File Type Manipulation, Data Exploration and Model Creation
+This project/challenge is divided into 4 parts: API Access, File Type Manipulation, Data Exploration and Model Creation
 
 ​
 
