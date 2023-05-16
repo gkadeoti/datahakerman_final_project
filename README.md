@@ -1,13 +1,10 @@
 
 # Introduction
-Please use version control and virtual environments in our work.
-Please commit several times as your work progress with meaningful comments and create a requirements file so we can see what you are working with.
+
+This project/chllenge is divided into 4 parts: API Access, File Type Manipulation, Data Exploration and Model Creation
+
 ​
-Now, as for the challenges, you find the data you need in the "data" folder and should be comprised of 3 files: csv_file.csv, json_file.json, txt_file.txt
-​
-The challenges are divided into 4 parts:
-​
-__API Access__
+
 ​
 This challenge will involve querying an API and extracting information from it. The API in question provides information on Game of Thrones, allowing one to access information on the houses, characters and books.
 ​
@@ -146,44 +143,7 @@ love_island_data['author.properties.friends'] = love_island_data['author.propert
 ```
 
 # Model Building
-Step 1: Install additional packages for model building: scikit-learn, autogluon, streamlit
-
-```
-pip install torch==1.13.1 torchvision==0.14.1 -f https://download.pytorch.org/whl/cpu/torch_stable.html
-pip install autogluon streamlit
-pip install -U scikit-learn
-
-```
-- - -
-### Note: this is for Mac devices, for Windows users, check the package documentation
-
-### Test your installation as follows:
-
-(hackermanproject_env) macbook@Gbemilekes-MBP datahakerman_final_project % python
-Python 3.9.16 | packaged by conda-forge | (main, Feb  1 2023, 21:42:20) 
-[Clang 14.0.6 ] on darwin
-Type "help", "copyright", "credits" or "license" for more information.
->>> from autogluon.tabular import TabularDataset, TabularPredictor
-```
-
-If that works, you have good installation for `autogluon`.
-
-And then for `Streamlit`
-
-```bash
-
-(tescochurn) macbook@Gbemilekes-MBP tesco_customer_churn % streamlit hello
-  Welcome to Streamlit. Check out our demo in your browser.
-
-  Local URL: http://localhost:8501
-  Network URL: http://192.168.1.227:8501
-
-  Ready to create your own Python apps super quickly?
-  Head over to https://docs.streamlit.io
-
-  May you create awesome apps!
-
-This will automatically pop up on your default browser on this address: http://localhost:8501/
+Step 1: 
 
 
 
