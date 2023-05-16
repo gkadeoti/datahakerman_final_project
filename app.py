@@ -12,4 +12,3 @@ content.body = st.text_area('post content')
 location.country = st.selectbox('country', options=['GB','GG','JE','IM'])
 location.longitude = st.number_input ('longitude')
 location.latitude = st.number_input ('latitude')
-

@@ -1,6 +1,9 @@
 # Ignore practice files
 Comaprison_tests
 data.zip
+old environment
+app.py
+jupyter_notebook
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
