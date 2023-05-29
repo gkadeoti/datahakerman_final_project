@@ -25,7 +25,7 @@ We would like you to answer the following:
 ​
 Hint: index value of Septon needs to be found first; it is smaller than 20.
 ​
-* File type manipulation and formatting
+* File type manipulation and formatting:
 ​
 Three files are presented, one CSV, one TXT and one JSON file. Each contain 1000 rows of data. There are two challenges, both involving collating these files into one data frame. The fields in all files are:
 ​
@@ -110,20 +110,6 @@ conda activate twittersentiment_env
 - Data Exploration
 - Model Building
 
-
-# Repository Structure
-- inputs/data
-- models
-- outputs
-- .gitignore
-- README.md
-- TS01_API_Access_.ipynb
-- TS02_Dataframe_Merging.ipynb
-- TS03_Data_Exploration.ipynb
-- TS04_Model_Building.ipynb
-- environment.yml
-- requirements.txt
-
 # API Data Call
 * Important Note: Read the GOT API Documentation: https://anapioficeandfire.com/Documentation and the Requests Doumentation: https://requests.readthedocs.io/en/latest/user/quickstart/
 
@@ -146,7 +132,12 @@ Step 3: For Question (b)
 * 3f: Check/determine the number of each unique value in the "gender" column.
 
 Step 4: For Question (c)
-* 4a:
+* 4a: Specify the API URL with the section and index.
+* 4b: Send a GET request to the API.
+* 4c: Using while loop, write a function for the SECTION 'books', which returns a count for INDEXES successfully called in the URL.
+* 4d: If the response status code is not 200 (success), exit the loop.
+* 4e: Increment the count and index.
+* 4f: Call the function to get the number of books.
 
 Step 5: For Question (d)
 * 5a: Specify the Characters URL
@@ -212,19 +203,30 @@ Step 4: Correlation
 
 # Model Building
 Step 1:  Prepare the dataset for modelling
-* 1a Read in the combined dataset
-* 1b Inspect the dataset
-* 1c Drop duplicate and irrelevant columns in dataframe
+* 1a: Read in the combined dataset
+* 1b: Inspect the dataset
+* 1c: Drop duplicate and irrelevant columns in dataframe
 
 Step 2:
 * 2a: Set the train_test_split for the dataset at 0.3 (test) and 0.7 (train).
 * 2b: Set the label and save path.
 
 Step 3:
-3.  Use Autogluon Tabular Predictor to build model and evaluate features. See documentation : https://auto.gluon.ai/dev/tutorials/tabular/tabular-quick-start.html
+* 3: Use Autogluon Tabular Predictor to build model and evaluate features. See documentation : https://auto.gluon.ai/dev/tutorials/tabular/tabular-quick-start.html
 
 
-
+# Repository Structure
+- inputs/data
+- models
+- outputs
+- .gitignore
+- README.md
+- TS01_API_Access_.ipynb
+- TS02_Dataframe_Merging.ipynb
+- TS03_Data_Exploration.ipynb
+- TS04_Model_Building.ipynb
+- environment.yml
+- requirements.txt
 
 
 
