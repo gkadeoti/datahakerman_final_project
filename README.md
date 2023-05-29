@@ -37,11 +37,11 @@ where the ‘.’ Indicates a nested field.
 ​
 * b) Next, using the created dataframe, integrate the data from the JSON file into the existing columns. The resulting dataframe should now be 3000 rows long.
 ​
-* Data Exploration.
+* Data Exploration:
 ​
 In this challenge we would like to know something interesting about the data. You are free to explore as you wish, producing plots, tables, statistics, etc. Feel free to use any variables in the dataset or include external data you may consider relevant to complement your analysis.  
 ​
-* Model Creation
+* Model Creation:
 ​
 For this task you can use AutoGluon or you preferred algorithm.
 ​
