@@ -215,21 +215,4 @@ Step 3:
 * 3: Use Autogluon Tabular Predictor to build model and evaluate features. See documentation : https://auto.gluon.ai/dev/tutorials/tabular/tabular-quick-start.html
 
 
-# Repository Structure
-- inputs/data
-- models
-- outputs
-- .gitignore
-- README.md
-- TS01_API_Access_.ipynb
-- TS02_Dataframe_Merging.ipynb
-- TS03_Data_Exploration.ipynb
-- TS04_Model_Building.ipynb
-- environment.yml
-- requirements.txt
-
-
-
-
-
 
