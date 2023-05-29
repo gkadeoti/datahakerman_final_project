@@ -107,8 +107,36 @@ conda activate (ENVIRONMENT NAME)
 conda activate twittersentiment_env
 
 ```
+
+# Project Structure
+
+
 # API Data Call
-Step 
+
+Step 1
+Confirm acess to the API root url
+
+```
+
+got_url = "https://anapioficeandfire.com/api/"
+got_response = requests.get(got_url)
+
+```
+
+If got_response = 200, then access is confirmed.
+
+```
+Step 2
+For question a, read in the Houses URL and specify parameters
+
+```
+got_houses_url="https://anapioficeandfire.com/api/houses"
+query_params = {"name": "House Breakstone",}
+
+```
+For question b, read in the Houses URL and specify parameters
+
+
 
 
 # Data Exploration
