@@ -2,9 +2,6 @@
 # Introduction
 
 This project/challenge is divided into 4 parts: API Access, File Type Manipulation, Data Exploration and Model Creation
-
-​
-
 ​
 This challenge will involve querying an API and extracting information from it. The API in question provides information on Game of Thrones, allowing one to access information on the houses, characters and books.
 ​
@@ -14,7 +11,7 @@ Where SECTION can be either ‘books’, ‘characters’, or ‘houses’ and I
 ​
 For example, to access the character Peter Baelish, the full request would be http://anapioficeandfire.com/api/characters/823, where 823 is the index corresponding to that character. 
 ​
-It's recommended to read the full documentation, which can be found here: https://anapioficeandfire.com/Documentation
+It's recommended to read the full documentation, which can be found here: https://anapioficeandfire.com/Documentation.
 ​
 We would like you to answer the following:
 ​
@@ -28,7 +25,7 @@ d) How many books does the character ‘High Septon’ appear in? (ignoring ‘p
 ​
 Hint: index value of Septon needs to be found first; it is smaller than 20.
 ​
-__File type manipulation and formatting__
+# File type manipulation and formatting
 ​
 Three files are presented, one CSV, one TXT and one JSON file. Each contain 1000 rows of data. There are two challenges, both involving collating these files into one data frame. The fields in all files are:
 ​
@@ -40,11 +37,11 @@ a) Begin by collating the CSV and TXT files together into one pandas dataframe. 
 ​
 b) Next, using the created dataframe, integrate the data from the JSON file into the existing columns. The resulting dataframe should now be 3000 rows long.
 ​
-__Data exploration__
+# Data Exploration
 ​
 In this challenge we would like to know something interesting about the data. You are free to explore as you wish, producing plots, tables, statistics, etc. Feel free to use any variables in the dataset or include external data you may consider relevant to complement your analysis.  
 ​
-__Model creation__
+# Model Creation
 ​
 For this task you can use AutoGluon or you preferred algorithm.
 ​
@@ -109,7 +106,24 @@ conda activate twittersentiment_env
 ```
 
 # Project Structure
+- API Data Call
+- DataFrame Merging
+- Data Exploration
+- Model Building
 
+
+# Repository Structure
+- inputs/data
+- models
+- outputs
+- .gitignore
+- README.md
+- TS01_API_Access_.ipynb
+- TS02_Dataframe_Merging.ipynb
+- TS03_Data_Exploration.ipynb
+- TS04_Model_Building.ipynb
+- environment.yml
+- requirements.txt
 
 # API Data Call
 
@@ -141,14 +155,17 @@ For question b, read in the Houses URL and specify parameters
 
 # Data Exploration
 
-Step 1: Import the required packages for data exploration: matplotlib, folium, scikit-learn
+Step 1: Preambles
+1a: Import the required packages for data exploration: matplotlib, folium, scikit-learn
+1b: Confirm working directory
+1c: Read in merged data
 
-```
-pip install matplotlib -q
-pip install folium
-```
-
-Step 2: Read in merged data
+Step 2: Data Inspection
+2a: Inspect the merged dataframe
+2b: To check and identify null values
+2c: Drop rows with null values in the predicted/outcome column (sentiment)
+2d: Use fillna to propagate non-NULL values forward for rows with one missing value.
+2e: To format the data type
 
 ```
 love_island_data = pd.read_csv('outputs/all_merged_data.csv')
@@ -171,7 +188,36 @@ love_island_data['author.properties.friends'] = love_island_data['author.propert
 ```
 
 # Model Building
-Step 1: 
+Step 1:  Prepare the dataset for modelling
+
+```
+1a Read in the combined dataset
+
+```
+love_island_data = pd.read_csv('outputs/love_island_data.csv')
+
+```
+
+1b Inspect the dataset
+
+```
+
+love_island_data.info()
+love_island_data.shape
+
+```
+
+1c Drop duplicate and irrelevant columns in dataframe
+
+```
+del love_island_data ['COLUMN+NAME']
+
+Step 2:
+2a: Set the train_test_split for the dataset at 0.3 (test) and 0.7 (train).
+2b: Set the label and save path.
+
+Step 3:
+3 Use Autogluon Tabular Predictor to build model and evaluate features. See documentation : https://auto.gluon.ai/dev/tutorials/tabular/tabular-quick-start.html
 
 
 
