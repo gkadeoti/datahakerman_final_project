@@ -18,7 +18,7 @@ location.latitude = st.number_input('latitude degrees', -90, 90)
 input_data_dict = {
     'author.properties.friends': 2345,
     'author.properties.status_count': 135,
-    'author.properties.verified': True,
+    'author.properties.verified': True
     'content.body': #LoveIsland is the biggest show in Europe right now!!,
    # 'location.country':'GB',
    # 'location.latitude': 53.3887
