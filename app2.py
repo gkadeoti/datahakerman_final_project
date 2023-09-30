@@ -20,8 +20,8 @@ input_data_dict = {
     'author.properties.status_count': 135,
     'author.properties.verified': True,
     'content.body': #LoveIsland is the biggest show in Europe right now!!,
-    'location.country': GB,
-    'location.latitude': 53.3887
+   # 'location.country':'GB',
+   # 'location.latitude': 53.3887
 }
 
 st.write(input_data_dict)
