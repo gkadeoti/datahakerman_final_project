@@ -2,8 +2,6 @@
 
 import streamlit as st
 import pandas as pd
-from autogluon.tabular import TabularPredictor
-
 
 st.title('Love Island Twitter Sentiment Prediction')
 
