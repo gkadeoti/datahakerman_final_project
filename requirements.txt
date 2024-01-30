@@ -1,5 +1,5 @@
 autogluon==0.7.0
-streamlit==1.22.0
+streamlit==1.30.0
 torch==1.13.1
 torchvision==0.14.1
 jupyter
